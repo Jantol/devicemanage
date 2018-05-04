@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dm-parent</artifactId>
+        <groupId>com.shuren</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../dm-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <artifactId>dm-common</artifactId>
+
+
+    <!--<dependencies>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>javax.servlet-api</artifactId>-->
+            <!--&lt;!&ndash;如果此jar包编译需要而发布不需要&ndash;&gt;-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet.jsp</groupId>-->
+            <!--<artifactId>jsp-api</artifactId>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>javax.servlet</groupId>-->
+            <!--<artifactId>jstl</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;全文检索的相关jar，Lucene，Solr&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.lucene</groupId>-->
+            <!--<artifactId>lucene-core</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.lucene</groupId>-->
+            <!--<artifactId>lucene-queryparser</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.lucene</groupId>-->
+            <!--<artifactId>lucene-analyzers-common</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; solr客户端 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.solr</groupId>-->
+            <!--<artifactId>solr-solrj</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;处理百度富文本编辑器的工具包、加密工具包&ndash;&gt;-->
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>com.baidu</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>ueditor</artifactId>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>commons-codec</groupId>-->
+            <!--<artifactId>commons-codec</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;时间操作jar,可以替代原有的Date中的常用方法&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>joda-time</groupId>-->
+            <!--<artifactId>joda-time</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;字符串处理jar，Object转换成String &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.commons</groupId>-->
+            <!--<artifactId>commons-lang3</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 通信工具，如FTPClient 可以使用作为上传操作 VSFTPD图片服务器&ndash;&gt;-->
+        <!--&lt;!&ndash; io工具 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>commons-io</groupId>-->
+            <!--<artifactId>commons-io</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>commons-net</groupId>-->
+            <!--<artifactId>commons-net</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; Json处理工具包，Jackson  @ResponseBody mvc:annotation-driven&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+            <!--<artifactId>jackson-databind</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.json</groupId>-->
+            <!--<artifactId>json</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; httpclient,可以处理http请求 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.httpcomponents</groupId>-->
+            <!--<artifactId>httpclient</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; quartz任务调度框架 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.quartz-scheduler</groupId>-->
+            <!--<artifactId>quartz</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 单元测试 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>junit</groupId>-->
+            <!--<artifactId>junit</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;slf4j是日志接口(日志规范)，logback是日志实现&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-api</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;logback的基础模块&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>ch.qos.logback</groupId>-->
+            <!--<artifactId>logback-core</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;slf4j的实现并整合，是log4j的改良版本&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>ch.qos.logback</groupId>-->
+            <!--<artifactId>logback-classic</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; mybatis包和桥接包&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.mybatis</groupId>-->
+            <!--<artifactId>mybatis</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.mybatis</groupId>-->
+            <!--<artifactId>mybatis-spring</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;私人创建mybatis分页工具类&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.miemiedev</groupId>-->
+            <!--<artifactId>mybatis-paginator</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; mysql &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 连接池 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>druid</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;4: Spring相关 &ndash;&gt;-->
+        <!--&lt;!&ndash;Spring核心依赖 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-core</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-beans</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-context</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;Spring DAO层的依赖 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-jdbc</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-tx</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;Spring WEB层的依赖 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-webmvc</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash;Spring Test的依赖 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-test</artifactId>-->
+
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;消息服务中间件&ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-context-support</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-jms</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 消息队列相关 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.activemq</groupId>-->
+            <!--<artifactId>activemq-all</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 文件上传组件 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>commons-fileupload</groupId>-->
+            <!--<artifactId>commons-fileupload</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; 缓存服务器Redis客户端-Jedis &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>redis.clients</groupId>-->
+            <!--<artifactId>jedis</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; dubbo相关 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>dubbo</artifactId>-->
+
+        <!--</dependency>-->
+        <!--&lt;!&ndash; zookeeper相关 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.zookeeper</groupId>-->
+            <!--<artifactId>zookeeper</artifactId>-->
+
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.sgroschupf</groupId>-->
+            <!--<artifactId>zkclient</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;JSP转换成HTML  动态页面静态化 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.freemarker</groupId>-->
+            <!--<artifactId>freemarker</artifactId>-->
+
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
+            <!--&lt;!&ndash;<groupId>org.wltea.analyzer</groupId>&ndash;&gt;-->
+            <!--&lt;!&ndash;<artifactId>IKAnalyzer</artifactId>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
+
+    <!--</dependencies>-->
+
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dm-common" />
+        <module name="dm-manager-dao" />
+        <module name="dm-manager-interface" />
+        <module name="dm-manager-pojo" />
+        <module name="dm-manager-service" />
+        <module name="dm-manager-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dm-common" target="1.7" />
+      <module name="dm-manager" target="1.7" />
+      <module name="dm-manager-dao" target="1.7" />
+      <module name="dm-manager-interface" target="1.7" />
+      <module name="dm-manager-pojo" target="1.7" />
+      <module name="dm-manager-service" target="1.7" />
+      <module name="dm-manager-web" target="1.7" />
+      <module name="dm-parent" target="1.7" />
+      <module name="tt-manager-dao" target="1.7" />
+      <module name="tt-manager-interface" target="1.7" />
+      <module name="tt-manager-service" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dm-common/dm-common.iml" filepath="$PROJECT_DIR$/dm-common/dm-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager-dao/dm-manager-dao.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager-dao/dm-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager-interface/dm-manager-interface.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager-interface/dm-manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager-pojo/dm-manager-pojo.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager-pojo/dm-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager-service/dm-manager-service.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager-service/dm-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-manager/dm-manager-web/dm-manager-web.iml" filepath="$PROJECT_DIR$/dm-manager/dm-manager-web/dm-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dm-parent/dm-parent.iml" filepath="$PROJECT_DIR$/dm-parent/dm-parent.iml" />
+    </modules>
+  </component>
+</project>
